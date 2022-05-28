@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteCrossB">
+  <test thread-count="5" name="ChromeBrowser">
+     <parameter name="browser"  value="ChromeBrowser"/>
+    <classes>
+     
+      <class name="testPack1510.testHRM20"/>
+     
+    </classes>
+  </test> <!-- TestCrossB -->
+
+   <test thread-count="5" name="FirefoxBrowser">
+     <parameter name="browser"  value="FirefoxBrowser"/>
+    <classes>
+     
+      <class name="testPack1510.testHRM20"/>
+     
+    </classes>
+  </test> <!-- TestCrossB -->
+</suite> <!-- SuiteCrossB -->

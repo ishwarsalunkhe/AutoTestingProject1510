@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteParallel"  thread-count="2" parallel ="classes" >
+  <test name="TestParallel">
+<parameter name ="browser"   value="ChromeBrowser"/>
+    <classes>
+    
+      <class name="testPack1510.testHRM20"/>
+      <class name="testPack1510.TestNG_RunProg"/>
+      
+    </classes>
+  </test> <!-- TestParallel -->
+
+ <test  name="TestParallel2">
+<parameter name ="browser"   value="FirefoxBrowser"/>
+    <classes>
+     
+      <class name="testPack1510.testHRM20"/>
+      <class name="testPack1510.TestNG_RunProg"/>
+    </classes>
+  </test> <!-- TestParallel -->
+</suite> <!-- SuiteParallel -->
